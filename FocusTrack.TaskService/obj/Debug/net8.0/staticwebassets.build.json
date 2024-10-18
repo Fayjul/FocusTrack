@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1qBgGsMfCYgwaDSuS7KAvEPKC2/1Bu/zFt5VPaALtjk=",
+  "Source": "FocusTrack.TaskService",
+  "BasePath": "_content/FocusTrack.TaskService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -20,3 +20,14 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#Avoiding .dll files
+*.dll
+*.http
+*.exe
+*.Cache
+*.pdb
+*.props
+*.targets
+*.Up2Date
+*.so
+*.dylib
