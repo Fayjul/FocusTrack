@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FocusTrack.TaskService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c19e4bbb2e31d72debfe43a757d48f5d9a4a272")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09fcf1ccbe8f68d574bb8bd4d866d99fabafecce")]
 [assembly: System.Reflection.AssemblyProductAttribute("FocusTrack.TaskService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FocusTrack.TaskService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

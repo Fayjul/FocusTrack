@@ -1,5 +1,6 @@
 using FocusTrack.TaskService.Data;
 using FocusTrack.TaskService.Models;
+using FocusTrack.TaskService.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,10 +11,12 @@ namespace FocusTrack.TaskService.Controllers
     public class TaskController : ControllerBase
     {
         private readonly TaskDbContext _context;
+        private readonly RabbitMQPublisher _rabbitMqPublisher;
 
-        public TaskController(TaskDbContext context)
+        public TaskController(TaskDbContext context, RabbitMQPublisher rabbitMqPublisher)
         {
             _context = context;
+            _rabbitMqPublisher = rabbitMqPublisher;
         }
 
         [HttpGet]
@@ -41,7 +44,7 @@ namespace FocusTrack.TaskService.Controllers
             _context.Tasks.Add(task);
             await _context.SaveChangesAsync();
 
-            // Optionally publish task.created event to RabbitMQ here
+            _rabbitMqPublisher.PublishTaskEvent("task.created", task);
 
             return CreatedAtAction(nameof(GetTask), new { id = task.Id }, task);
         }
@@ -59,7 +62,8 @@ namespace FocusTrack.TaskService.Controllers
             try
             {
                 await _context.SaveChangesAsync();
-                // Optionally publish task.updated event to RabbitMQ here
+                _rabbitMqPublisher.PublishTaskEvent("task.updated", task);
+
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -88,7 +92,7 @@ namespace FocusTrack.TaskService.Controllers
             _context.Tasks.Remove(task);
             await _context.SaveChangesAsync();
 
-            // Optionally publish task.deleted event to RabbitMQ here
+            _rabbitMqPublisher.PublishTaskEvent("task.deleted", new { TaskId = id });
 
             return NoContent();
         }
