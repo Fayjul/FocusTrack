@@ -1,5 +1,6 @@
 using Hangfire;
 using System;
+using FocusTrack.ReminderService.Models;
 
 namespace FocusTrack.ReminderService.Services
 {

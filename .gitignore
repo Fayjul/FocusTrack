@@ -31,3 +31,7 @@ TestResults.xml
 *.Up2Date
 *.so
 *.dylib
+*.vsidx
+*.sqlite
+*.editorconfig
+.fake

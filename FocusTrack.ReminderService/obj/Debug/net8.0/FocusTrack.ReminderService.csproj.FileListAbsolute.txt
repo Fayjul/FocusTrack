@@ -1,0 +1,8 @@
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.csproj.AssemblyReference.cache
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.GeneratedMSBuildEditorConfig.editorconfig
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.AssemblyInfoInputs.cache
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.AssemblyInfo.cs
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.csproj.CoreCompileInputs.cache
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.MvcApplicationPartsAssemblyInfo.cs
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.MvcApplicationPartsAssemblyInfo.cache
+G:\DOTNET project\FocusTrack\FocusTrack.ReminderService\obj\Debug\net8.0\FocusTrack.ReminderService.sourcelink.json
